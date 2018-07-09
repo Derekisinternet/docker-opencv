@@ -16,9 +16,5 @@ RUN git clone https://github.com/opencv/opencv.git; cd opencv && \
 # create working directory
 WORKDIR /app
 ADD . /app
-# RUN cd  /app/build && \
-#     ./makeCMakeLists.sh -r && \
-#     cmake -D CMAKE_INSTALL_PREFIX=/opencv/release .. && \
-#     make
 
-ENTRYPOINT ["/app/build"]
+ENTRYPOINT ["/app/"]
