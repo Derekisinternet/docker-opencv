@@ -15,6 +15,7 @@ RUN git clone https://github.com/opencv/opencv.git; cd opencv && \
 
 # create working directory
 WORKDIR /app
-ADD . /app
+# put opencv in a sub-folder to keep working dir clean
+ADD . /app/opencv
 
 ENTRYPOINT ["/app/"]
